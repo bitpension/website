@@ -18,7 +18,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="flex items-center justify-between py-9 lg:px-8">
+    <header className="flex items-center justify-between py-9 lg:px-2">
       {/* Logo */}
       <div>
         <Image src={Logo} alt="Logo" className=" hidden md:block" />
@@ -30,7 +30,7 @@ const Header: React.FC = () => {
         <div>
           <BitcoinRate />
         </div>
-        <ul className="flex items-center gap-9 text-[#7C7C7C] text-lg">
+        <ul className="flex items-center lg:gap-2 xl:gap-4 gap-9 text-[#7C7C7C] text-lg">
           <li>
             <Link href="/press">Press</Link>
           </li>
@@ -44,17 +44,17 @@ const Header: React.FC = () => {
             <Link href="/faq">FAQ</Link>
           </li>
           <li>
-            <Link href="/bitcoin">What is Bitcoin?</Link>
+            <Link href="/bitcoin">Bitcoin</Link>
           </li>
           <li>
-            <Link href="/payment">Payment Plan</Link>
+            <Link href="/payment">Plans</Link>
           </li>
         </ul>
       </nav>
 
       {/* Desktop Actions */}
       <div className="hidden lg:flex items-center gap-4">
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2">
           <Image src={Globe} alt="Icon" />
           <p>EN</p>
           <Image src={DownArrow} alt="Icon" />
@@ -125,10 +125,10 @@ const Header: React.FC = () => {
             <Link href="/faq">FAQ</Link>
           </li>
             <li onClick={toggleMenu}>
-              <Link href="/bitcoin">What is Bitcoin?</Link>
+              <Link href="/bitcoin">Bitcoin?</Link>
             </li>
             <li onClick={toggleMenu}>
-              <Link href="/payment">Payment Plan</Link>
+              <Link href="/payment">Plans</Link>
             </li>
           </ul>
           <div className="mt-8 flex items-center gap-4">
